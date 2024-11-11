@@ -5,17 +5,12 @@ using System.Threading.Tasks;
 
 namespace Generics.Classes
 {
-    public class Generic
+
+    // Ved å legge til <T> i klasseerklæringen, indikerer man at klassen kan initieres med en valgfri type.
+    public class ExampleGenerics<T>
     {
-
-        // 
-        static void SwapOrConcatenate<T>(ref T a, ref T b)
-        {
-            T temp = a;
-            a = b;
-            b = temp;
-
-            
-        }
+        // Det er hittil uavklart hvilken type  Value skal bestå av: den er generisk, ExampleGenerics kan initiaseres med hvilken som helst type.
+        public T Value { get; set; }
+        
     }
 }
