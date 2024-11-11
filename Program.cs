@@ -7,10 +7,6 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-
-
-
-
         ExampleGenerics<int> genericValueInt = new ExampleGenerics<int>();
         genericValueInt.Value = 3;
         ExampleGenerics<string> exampleGenericsString = new ExampleGenerics<string>();
